@@ -2,7 +2,7 @@
 
 *An educational web application that brings Key-Value Cache concepts to life*
 
-![KV-Cache Demo](kvchache.mov.gif)
+![KV-Cache Demo](kvcache.mov.gif)
 
 
 ## Overview
