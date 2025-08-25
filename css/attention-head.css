@@ -1,0 +1,151 @@
+/* attention-head.css */
+
+.attention-head {
+    background: #ffffff;
+    border: 3px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.attention-head:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.head-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.head-icon {
+    font-size: 1.5rem;
+}
+
+.head-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.cache-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.keys-section, .values-section {
+    flex: 1;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.keys-section h4, .values-section h4 {
+    color: #34495e;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cache-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.cache-item {
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    word-break: break-word;
+}
+
+.key-item {
+    background: rgba(52, 152, 219, 0.1);
+    border-color: rgba(52, 152, 219, 0.3);
+}
+
+.value-item {
+    background: rgba(46, 204, 113, 0.1);
+    border-color: rgba(46, 204, 113, 0.3);
+}
+
+.cache-item:hover {
+    transform: translateX(3px);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attention-weights {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: auto;
+}
+
+.attention-weights h4 {
+    color: #34495e;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.weight-bar {
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.weight-bar:hover {
+    opacity: 0.8;
+    transform: scaleY(1.2);
+}
+
+/* Custom scrollbar for cache items */
+.cache-items::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cache-items::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.cache-items::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.cache-items::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cache-container {
+        flex-direction: column;
+    }
+    
+    .attention-head {
+        padding: 15px;
+    }
+    
+    .cache-items {
+        max-height: 150px;
+    }
+}

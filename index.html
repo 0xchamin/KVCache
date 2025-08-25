@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KV Cache Visualization</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/attention-head.css">
+</head>
+<body>
+    <div class="demo-container">
+        <header class="demo-header">
+            <h1>KV Cache Interactive Demo</h1>
+            <p>Watch how GPT-style transformers cache key-value pairs for efficient attention computation</p>
+        </header>
+        
+        <main class="demo-main">
+            <!-- Token Pipeline Section -->
+            <section class="pipeline-section">
+                <div id="token-pipeline-container"></div>
+            </section>
+
+            <!-- NEW: Computation Comparison Section -->
+            <section class="computation-section">
+                <h2>Computation Complexity Comparison</h2>
+                <div id="computation-comparison-container"></div>
+            </section>
+    
+            
+            <!-- Attention Heads Section -->
+            <section class="attention-heads-section">
+                <h2>Attention Heads</h2>
+                <div class="heads-container">
+                    <div id="head-1" class="head-container"></div>
+                    <div id="head-2" class="head-container"></div>
+                    <div id="head-3" class="head-container"></div>
+                    <div id="head-4" class="head-container"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script type="module" src="js/Main.js"></script>
+</body>
+</html>
